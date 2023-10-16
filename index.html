@@ -3,11 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Парикмахер-колорист в Краснодаре Дарья Бажина</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  
+  <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <a href=""><img src="icons/logo.svg" alt="Логотип"></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="">Галерея</a></li>
+            <li class="nav-list__item"><a href="">Прайс-лист</a></li>
+            <li class="nav-list__item"><a href="">Обо мне</a></li>
+            <li class="nav-list__item"><a href="">Обучение</a></li>
+          </ul>
+          <div class="line"></div>
+        </nav>
+        <div class="button-wrapper">
+          <a class="button button-order" href="#">
+            <p class="button-text">Записаться</p>
+            <img class="whatsup-icon" src="icons/whatsup.svg" alt="Вотсап">
+          </a>
+        </div>
+      </div>
+    </header>  
+    <main>
+      <section class="main-screen">
+        <div class="main-screen__main-wrapper">
+          <h1 class="main-screen__main-title main-title">Эксперт по стрижкам и окрашиванию в Краснодаре</h1>
+          <p class="main-screen__description paragraph-text description">Создайте ваш идеальный образ с ведущим Парикмахером-Колористом в Краснодаре</p>
+        </div>
+        <div class="img-wrapper">
+          <img class="img-wrapper__hairdresser" src="img/dasha-1.png" alt="Парикмахер Дарья Бажина">
+          <div class="img-wrapper__quotation-wrapper ">
+            <div class="quotation-wrapper">
+              <img class="quotation-wrapper__quot" src="icons/quot.png" alt="Кавычки">
+              <p class="quotation-wrapper__text quotation-text">Ко мне приходят за мечтой</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-services">
+        <h2 class="second-title second-title_top-line">мои работы</h2>
+      </section>
+      <section class="curly-method">
+        <h2 class="second-title second-title_top-line">Кудрявый метод</h2>
+        <div class="curly-img__wrapper">
+          <img src="img/curly.png" alt="Кудрявая прическа">
+        </div>
+        <div class="curly-card__wrapper">
+          <div class="curly-card">
+            <h4 class="curly-card__title">Что такое кудрявый метод?</h4>
+            <p class="curly-card__desc">это многоступенчатый уход за пушистыми, волнистыми и кудрявыми волосами, который позволяет создать четко очерченные локоны, словно вы использовали плойку.</p>
+          </div>
+          <div class="curly-card__button-wrapper">
+            <a href="#"><button class="">Подробнее</button></a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section class="my-advantages">
+        <h2 class="second-title second-title_top-line">мои преимущества</h2>
+        <div class="my-advantages__contant-wrapper">
+          <div class="advantage-card">  
+            <img src="icons/circle.svg" alt="Окружность" class="advantage-card__circle">
+            <h4 class="advantage-card__title">Опыт и профессионализм</h4>
+            <p class="advantage-card__decr">Я имею более 10 лет успешной практики в мире стиля и красоты.</p>
+          </div>
+          <div class="advantage-card">
+            <img src="icons/circle.svg" alt="Окружность" class="advantage-card__circle">
+            <h4 class="advantage-card__title">Постоянное обучение</h4>
+            <p class="advantage-card__decr">Я постоянно совершенствую свои навыки и знания, чтобы предоставить вам лучшие услуги.</p>
+          </div>
+          <div class="advantage-card">
+            <img src="icons/circle.svg" alt="Окружность" class="advantage-card__circle">
+            <h4 class="advantage-card__title">Индивидуальный подход</h4>
+            <p class="advantage-card__decr">Каждый клиент уникален, и я создаю образ, отвечающий вашим желаниям и потребностям.</p>
+          </div>
+        </div>
+        <div class="img-box">
+          <p class="img-box__quotation-text quotation-text">Бажина Дарья</p>
+          
+          <div class="wrapper__quotation-wrapper">
+            <img class="img-box__hairdr" src="img/dasha-2.jpg" alt="Парикмахер Дарья Бажина">
+            <div class="img-box__quotation-wrapper quotation-wrapper">
+              <img class="quotation-wrapper__quot" src="icons/quot.png" alt="Кавычки">
+              <p class="quotation-wrapper__text quotation-text">Давайте вместе создадим вашу историю стиля и красоты!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact-detailes">
+        <h2 class="second-title second-title_top-line">Контакты и запись</h2>
+        <div class="contact-detailes__contant-wrapper">
+          <div class="contact-detailes__button-wrapper button-wrapper">
+            <button class="button button-order"><p>Записаться</p><img src="#" alt="Инстаграмм"></button>
+          </div>
+          <div class="contact-detailes__address">
+            <p class="city">г. Краснодар</p>
+            <ul>
+              <li class="street">Восточно - Кругликовская, 22/3, 
+                салон "Брусника"</li>
+              <li class="street">Корницкого, 56</li>
+            </ul>
+          </div>
+          <div class="contact-detailes__phone"><p>+7 (XXX) XXX-XX-XX</p></div>
+          <div class="social-icons">
+            <img src="#" alt="Инстаграмм">
+            <img src="#" alt="Вотсапп">
+          </div>
+        </div>
+        <div class="contact-detailes__map-wrapper">
+          <!-- map -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-contant-wrapper">
+        <!-- 1 -->
+        <div class="">
+          <div class="logo-wrapper">
+            <a href=""><img src="icons/logo.svg" alt="Логотип"></a>
+          </div>
+          <div class="social-icons">
+            <img src="#" alt="Инстаграмм">
+            <img src="#" alt="Вотсапп">
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="links">
+          <ul class="links-list">
+            <li class="links-list__item"><a href="">Галерея</a></li>
+            <li class="links-list__item"><a href="">Прайс-лист</a></li>
+            <li class="links-list__item"><a href="">Обо мне</a></li>
+            <li class="links-list__item"><a href="">Обучение</a></li>
+          </ul>
+        </div>
+        <!-- 3 -->
+        <button>Задать вопрос</button>
+      </div>
+      <div class="footer__must-have-detailes">
+        <a href="">Политика конфиденциальности</a>
+        <p>*Instagram — проект Meta Platforms Inc., деятельность которой в России запрещена</p>
+      </div>
+    </footer>
+  </div>
+
 </body>
 </html>

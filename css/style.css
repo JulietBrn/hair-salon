@@ -1,0 +1,205 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #01010D; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  color: white;
+  font-family: 'open-sans'; }
+
+section {
+  margin-bottom: 120px; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1280px 1fr; }
+
+header, main, footer {
+  grid-column: 2/3; }
+
+@font-face {
+  font-family: 'caveat';
+  src: local("Caveat");
+  src: url(../fonts/Caveat/Caveat-Regular.ttf); }
+
+@font-face {
+  font-family: 'Cormorant-Infant';
+  src: local("Cormorant Infant");
+  src: url(../fonts/Cormorant_Infant/CormorantInfant-Regular.ttf); }
+
+@font-face {
+  font-family: 'open-sans';
+  src: local("Open sans");
+  src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf); }
+
+@font-face {
+  font-family: 'SS4';
+  src: local("Source Serif 4");
+  src: url(../fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf); }
+
+/* h1 */
+.main-title {
+  color: #F2C995;
+  font-family: 'SS4', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 105.523%; }
+
+.second-title {
+  color: #F2C995;
+  text-align: center;
+  font-family: 'Cormorant-Infant';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 105.1%;
+  text-transform: uppercase;
+  margin-bottom: 70px; }
+
+.second-title_top-line {
+  padding-top: 30px;
+  border-top: 1px solid rgba(242, 201, 149, 0); }
+
+.quotation-text {
+  font-family: 'caveat';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; }
+
+.paragraph-text {
+  font-family: 'open-sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; }
+
+.quotation-wrapper {
+  position: relative; }
+  .quotation-wrapper__quot {
+    position: absolute;
+    top: -20px;
+    left: -20px; }
+
+.advantage-card {
+  padding: 30px 40px;
+  width: 30%;
+  border-radius: 0px 13px 0px 0px;
+  border-top: 1px solid #F2C995;
+  border-right: 1px solid #F2C995;
+  position: relative;
+  margin-left: 15px; }
+  .advantage-card__circle {
+    position: absolute;
+    left: 0;
+    top: -1.8px;
+    transform: translateX(-50%); }
+  .advantage-card__title {
+    color: #F2C995;
+    font-family: 'open-sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px; }
+
+.button-text {
+  font-family: 'SS4';
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: var(--gradient, linear-gradient(180deg, #F2C995 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, #F2C995 100%));
+  background-clip: text;
+    background-clip--webkit-background-clip: text;
+    background-clip--webkit-text-fill-color: transparent; }
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px; }
+
+.nav {
+  padding: 15px 60px; }
+
+/* .line
+  stroke-width: 1px
+  stroke: rgba(242, 201, 149, 0.00) */
+/* .line
+  background: url(../icons/line.svg) cover center no-repeat */
+.nav-list {
+  display: flex;
+  gap: 20px; }
+  .nav-list__item {
+    font-family: 'SS4';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px; }
+    .nav-list__item a {
+      color: white;
+      transition: all .5s; }
+      .nav-list__item a:hover {
+        color: #F2C995; }
+
+/* main screen */
+.main-screen {
+  display: grid;
+  grid-template-columns: .4fr .6fr;
+  grid-template-rows: 80vh;
+  gap: 30px; }
+  .main-screen__main-wrapper {
+    padding-top: 70px; }
+  .main-screen__main-title {
+    margin-bottom: 45px; }
+  .main-screen__description {
+    width: 70%; }
+
+.description {
+  font-size: 18px; }
+
+.img-wrapper {
+  position: relative;
+  /* advantages */ }
+  .img-wrapper__hairdresser {
+    width: 100%; }
+  .img-wrapper__quotation-wrapper {
+    position: absolute;
+    top: 70%;
+    left: -10%; }
+
+.my-advantages__contant-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 70px; }
+
+.advantage-card:first-child, .advantage-card:last-child {
+  transform: translateY(40px); }
+
+.img-box {
+  display: grid;
+  grid-template-columns: max-content 300px;
+  justify-content: center;
+  gap: 30px;
+  transform: translateX(-80px); }
+  .img-box__quotation-text {
+    align-self: end; }
+  .img-box__hairdr {
+    width: 100%;
+    border-radius: 13px; }
+
+.wrapper__quotation-wrapper {
+  position: relative;
+  display: inline-block; }
+  .wrapper__quotation-wrapper .img-box__quotation-wrapper {
+    position: absolute;
+    width: 270px;
+    left: 90%;
+    bottom: 40%; }
