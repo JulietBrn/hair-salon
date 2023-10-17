@@ -1,13 +1,39 @@
 .button
   cursor: pointer
+  position: relative
   display: flex
   gap: 15px
   padding: 15px 40px
   border-radius: 13px
-  border: 1px solid $bezh-color
+  border: 1px solid transparent
   background: rgba(69, 3, 148, 0.00)
+  
+  &::before 
+    content: '' 
+    position: absolute
+    top: -1px
+    right: -1px
+    bottom: -1px
+    left: -1px
+    border: 1px solid transparent
+    border-image-source: var(--gradient, linear-gradient(180deg, #F2C995 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, #F2C995 100%))
+    border-image-slice: 1
+    border-image-width: 1
+    border-image-outset: 0
+    border-image-repeat: stretch
+    border-radius: 13px
+    pointer-events: none 
   .whatsup-icon
     height: 16px
+  
+  &_none-border
+    border: none
+    padding-top: 5px
+    &::before 
+      border: none
+  &_visit-gallery
+    padding-left: 0
+    padding-right: 5px
 
 
 .button-text
@@ -15,7 +41,8 @@
   font-size: 16px
   font-weight: 400
   text-transform: uppercase
-  background: var(--gradient, linear-gradient(180deg, #F2C995 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, #F2C995 100%))
+  background: var(--gradient, linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%))
   background-clip: text
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+  color: transparent
+  &_bezh
+    color: $bezh-color

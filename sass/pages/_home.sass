@@ -9,7 +9,7 @@
   &__main-title
     margin-bottom: 45px
   &__description
-    width: 70%
+    width: 80%
 .description
   font-size: 18px
 
@@ -22,8 +22,7 @@
     top: 70%
     left: -10%
 
-
-
+// <!-- my-services -->
 
   /* advantages */
 .my-advantages__contant-wrapper
@@ -47,7 +46,6 @@
     width: 100%
     border-radius: 13px
 
-
 .wrapper__quotation-wrapper
   position: relative
   display: inline-block
@@ -56,3 +54,42 @@
     width: 270px
     left: 90%
     bottom: 40%
+
+
+
+
+/* contact detailes */
+.info
+  display: grid
+  grid-template-columns: .4fr .6fr
+  gap: 60px
+  &__button-wrapper
+    margin-bottom: 60px
+  &__address
+    display: flex
+    flex-direction: column
+    gap: 25px
+  #map
+    border-radius: 13px
+
+.street-list
+  display: flex
+  flex-direction: column
+  padding-left: 38px
+  li
+    background: url(../icons/geo.svg) no-repeat
+    padding-left: 24px
+    color: $white-color
+    font-size: 18px
+    font-weight: 400
+    font-family: 'open-sans'
+    &:not(:last-child)
+      padding-bottom: 10px
+.social-icons
+  display: flex
+  gap: 20px
+  &__icon
+    cursor: pointer
+    width: 20px
+    height: 20px
+      

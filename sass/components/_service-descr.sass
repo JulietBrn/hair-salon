@@ -1,0 +1,73 @@
+.cards-box
+  display: grid
+  grid-template-columns: repeat(4, minmax(223px, 1fr))
+  grid-template-rows: 395px 330px
+  gap: 30px
+  margin-bottom: 50px
+  &__img
+    height: 100%
+  &__descr
+    padding: 40px 20px
+    position: relative
+  &__box
+    grid-column: 1/-1
+    display: flex
+    gap: 30px
+    justify-content: center
+
+.service-card
+  &__spot
+    position: absolute
+    z-index: -1
+  &__title
+    margin-bottom: 25px
+    text-align: center
+  .spot_top
+    top: -5px
+    left: 0
+  .spot_bottom
+    bottom: 0
+    right: 0
+
+.services-list
+  display: flex
+  flex-direction: column
+  gap: 10px
+  &__item
+    text-align: center
+    line-height: normal
+
+.services-wrapper__man-and-kids
+  display: flex
+  justify-content: space-between
+
+  /* man */
+.men
+  display: grid
+  grid-template-columns: repeat(2, minmax(230px, 267px))
+  gap: 30px
+  &__img
+    width: 100%
+  /* left */
+  &__btn-wrapper
+    margin-bottom: 60px
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  /* right */
+  // .cards-box__descr
+  //   margin-bottom: 30px
+
+/* kids */
+.kids
+  display: grid
+  grid-template-columns: repeat(2, minmax(230px, 267px))
+  gap: 30px
+  .spot_top
+    visibility: hidden
+  &__img
+    width: 100%
+  &__girl-wrapper
+    display: flex
+    align-items: center
