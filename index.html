@@ -6,6 +6,23 @@
   <title>Парикмахер-колорист в Краснодаре Дарья Бажина</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="sass/style.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/fav-icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/fav-icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/fav-icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/fav-icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/fav-icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/fav-icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/fav-icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/fav-icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/fav-icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/fav-icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/fav-icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/fav-icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/fav-icon/favicon-16x16.png">
+  <link rel="manifest" href="icons/fav-icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/fav-icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
   <div class="container">
@@ -14,11 +31,11 @@
         <div class="logo-wrapper">
           <a href="index.html"><img src="icons/logo.svg" alt="Логотип"></a>
         </div>
-        <nav class="nav">
+        <nav class="nav nav-hidden">
           <ul class="nav-list">
             <li class="nav-list__item"><a href="">Галерея</a></li>
             <li class="nav-list__item"><a href="">Прайс-лист</a></li>
-            <li class="nav-list__item"><a href="">Обо мне</a></li>
+            <li class="nav-list__item "><a href="">Обо мне</a></li>
             <li class="nav-list__item"><a href="">Обучение</a></li>
           </ul>
         </nav>
@@ -27,6 +44,11 @@
             <p class="button-text">Записаться</p>
             <img class="whatsup-icon" src="icons/whatsup.svg" alt="Вотсап">
           </a>
+        </div>
+        <div class="burger">
+          <hr class="burger-line toggle-1">
+          <hr class="burger-line burger-line-middle">
+          <hr class="burger-line toggle-2">
         </div>
       </div>
     </header>  
@@ -80,16 +102,14 @@
             <div class="cards-box__card">
               <img class="cards-box__img" src="img/serv-3.png" alt="">
             </div>
-            <div class="cards-box__box">
-              <div class="cards-box__card">
-                <img src="img/serv-4.png" alt="Женская прическа" class="cards-box__img">
-              </div>
-              <div class="cards-box__card">
-                <img src="img/serv-5.png" alt="Женская прическа" class="cards-box__img">
-              </div>
-              <div class="cards-box__card">
-                <img src="img/serv-6.png" alt="Женская прическа" class="cards-box__img">
-              </div>
+            <div class="cards-box__card">
+              <img src="img/serv-4.png" alt="Женская прическа" class="cards-box__img">
+            </div>
+            <div class="cards-box__card">
+              <img src="img/serv-5.png" alt="Женская прическа" class="cards-box__img">
+            </div>
+            <div class="cards-box__card">
+              <img src="img/serv-6.png" alt="Женская прическа" class="cards-box__img">
             </div>
           </div>
           <div class="services-wrapper__man-and-kids">
@@ -149,19 +169,38 @@
         <div class="second-title__wrapper">
           <h2 class="second-title second-title_top-line">Кудрявый метод</h2>
         </div> 
-        <div class="curly-img__wrapper">
-          <img src="img/curly.png" alt="Кудрявая прическа">
-        </div>
-        <div class="curly-card__wrapper">
-          <div class="curly-card">
-            <h4 class="curly-card__title">Что такое кудрявый метод?</h4>
-            <p class="curly-card__desc">это многоступенчатый уход за пушистыми, волнистыми и кудрявыми волосами, который позволяет создать четко очерченные локоны, словно вы использовали плойку.</p>
+        <div class="curly-method__about about">
+          <div class="about__wrapper">
+            <img class="spot" src="icons/spot.svg" alt="Пятно">
+            <h4 class="about__title title-text">Что такое кудрявый метод?</h4>
+            <p class="about__desc paragraph-text">Это многоступенчатый уход <span class="paragraph-text_bold">за пушистыми, волнистыми и кудрявыми волосами,</span> который позволяет создать четко очерченные локоны, словно вы использовали плойку.</p>
           </div>
-          <div class="curly-card__button-wrapper">
-            <a href="#"><button class="">Подробнее</button></a>
-            
+          
+        </div>
+        <div class="curly-method__contant-wrapper">
+          <div class="curly-img__wrapper">
+            <img class="curly-method__img" src="img/curly.png" alt="Кудрявая прическа">
+          </div>
+          <div class="curly-method__points points">
+            <img class="spot" src="icons/spot2.svg" alt="Пятно">
+            <h4 class="points__title title-text">Я научу вас ухаживать за кудрявыми волосами:</h4>
+            <ul class="points__list">
+              <li class="points__item paragraph-text">определю тип завитка,</li>
+              <li class="points__item paragraph-text">подберу средства, подходящие для вашего типа завитка,</li>
+              <li class="points__item paragraph-text">покажу как правильно мыть,</li>
+              <li class="points__item paragraph-text">покажу как правильно сушить,</li>
+              <li class="points__item paragraph-text">правильно «разберу» кудряшки.</li>
+            </ul>
+            <div class="curly-card__button-wrapper">
+              <a class="button button_visit-gallery button_none-border" href="#">
+                <p class="button-text">Подробнее</p>
+                <img src="icons/arrow-next.svg" alt="Подробнее">
+              </a>
+            </div>
           </div>
         </div>
+        
+          
       </section>
 
       <!-- advantages -->
@@ -201,7 +240,7 @@
       </section>
 
       <!-- contact -->
-      <section class="contact-detailes">
+<!--       <section class="contact-detailes">
         <div class="second-title__wrapper">
           <h2 class="second-title second-title_top-line">Контакты и запись</h2>
         </div>
@@ -232,12 +271,12 @@
           </div>
           <div class="info__map-wrapper">
             <iframe id="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A458fe88f930f4cdf0dca1a00632a0313a1c10fc940976e2c754376023601178d&amp;source=constructor" width="730" height="340" frameborder="0"></iframe>
-            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A458fe88f930f4cdf0dca1a00632a0313a1c10fc940976e2c754376023601178d&amp;width=730&amp;height=340&amp;lang=ru_RU&amp;scroll=true"></script> -->
-            <!-- https://yandex.ru/maps/?um=constructor%3A458fe88f930f4cdf0dca1a00632a0313a1c10fc940976e2c754376023601178d&source=constructorLink -->
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A458fe88f930f4cdf0dca1a00632a0313a1c10fc940976e2c754376023601178d&amp;width=730&amp;height=340&amp;lang=ru_RU&amp;scroll=true"></script>
+            https://yandex.ru/maps/?um=constructor%3A458fe88f930f4cdf0dca1a00632a0313a1c10fc940976e2c754376023601178d&source=constructorLink
           </div>
         </div>
         
-      </section>
+      </section> -->
     </main>
 
     <!-- footer -->
@@ -273,6 +312,7 @@
       </div>
     </footer>
   </div>
+  <script src="js.js"></script>
 
 </body>
 </html>

@@ -1,19 +1,31 @@
 .cards-box
   display: grid
-  grid-template-columns: repeat(4, minmax(223px, 1fr))
-  grid-template-rows: 395px 330px
+  grid-template-columns: repeat(8, minmax(80px, 1fr))
+  grid-template-rows: min-content min-content
   gap: 30px
   margin-bottom: 50px
+  @media (max-width: 1340px)
+    margin-bottom: 30px
+    gap: 20px
+  &__card
+    grid-column: span 2
+    &:nth-child(5)
+      grid-column: 2/ span 2
   &__img
-    height: 100%
+    width: 100%
+
+  @media (max-width: 1340px)
+    .img_small
+      width: 80%
+    .card_second
+      //align-content: 
+
   &__descr
     padding: 40px 20px
     position: relative
-  &__box
-    grid-column: 1/-1
-    display: flex
-    gap: 30px
-    justify-content: center
+    @media (max-width: 1340px)
+      padding: 20px 15px
+
 
 .service-card
   &__spot
@@ -22,6 +34,8 @@
   &__title
     margin-bottom: 25px
     text-align: center
+    @media (max-width: 1340px)
+      margin-bottom: 15px
   .spot_top
     top: -5px
     left: 0
@@ -33,6 +47,8 @@
   display: flex
   flex-direction: column
   gap: 10px
+  @media (max-width: 1340px)
+    gap: 8px
   &__item
     text-align: center
     line-height: normal
@@ -40,12 +56,15 @@
 .services-wrapper__man-and-kids
   display: flex
   justify-content: space-between
+  gap: 30px
 
   /* man */
 .men
   display: grid
   grid-template-columns: repeat(2, minmax(230px, 267px))
   gap: 30px
+  @media (max-width: 1340px)
+    gap: 20px
   &__img
     width: 100%
   /* left */
@@ -64,6 +83,8 @@
   display: grid
   grid-template-columns: repeat(2, minmax(230px, 267px))
   gap: 30px
+  @media (max-width: 1340px)
+    gap: 20px
   .spot_top
     visibility: hidden
   &__img
