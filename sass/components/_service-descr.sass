@@ -1,31 +1,48 @@
 .cards-box
   display: grid
   grid-template-columns: repeat(8, minmax(80px, 1fr))
-  grid-template-rows: min-content min-content
+  grid-template-rows: repeat(2, min-content)
   gap: 30px
   margin-bottom: 50px
   @media (max-width: 1340px)
     margin-bottom: 30px
     gap: 20px
+    @media (max-width: 1000px)
+      grid-template-columns: repeat(6, minmax(70px, 1fr))
+      grid-template-rows: repeat(3, min-content)
+      align-items: center
+      @media (max-width: 604px)
+        grid-template-columns: repeat(4, 1fr)
   &__card
     grid-column: span 2
     &:nth-child(5)
       grid-column: 2/ span 2
+      @media (max-width: 1000px)
+        grid-column: span 2
+    @media (max-width: 1000px)
+      &:nth-child(4)
+        grid-column: 2/ span 2
+      &:nth-child(6)
+        grid-column: 2/ span 2
+    @media (max-width: 604px)
+      &:nth-child(4)
+        grid-column: 1/span 2
+      &:nth-child(6)
+        grid-column: 1/span 2
+      &:nth-child(3)
+        grid-column: 2/ span 2
   &__img
     width: 100%
-
   @media (max-width: 1340px)
     .img_small
       width: 80%
-    .card_second
-      //align-content: 
-
   &__descr
     padding: 40px 20px
     position: relative
     @media (max-width: 1340px)
       padding: 20px 15px
-
+      @media (max-width: 1000px)
+        padding: 15px 0
 
 .service-card
   &__spot
@@ -49,6 +66,8 @@
   gap: 10px
   @media (max-width: 1340px)
     gap: 8px
+    @media (max-width: 768px)
+      gap: 5px
   &__item
     text-align: center
     line-height: normal
@@ -57,34 +76,51 @@
   display: flex
   justify-content: space-between
   gap: 30px
+  @media (max-width: 1000px)
+    flex-direction: column
 
   /* man */
 .men
   display: grid
-  grid-template-columns: repeat(2, minmax(230px, 267px))
+  grid-template-columns: repeat(2, minmax(100px, 267px))
   gap: 30px
   @media (max-width: 1340px)
     gap: 20px
+  @media (max-width: 1000px)
+    &__desc-wrapper
+      display: flex
+      flex-direction: column
+      gap: 10px
+
   &__img
     width: 100%
   /* left */
   &__btn-wrapper
     margin-bottom: 60px
+    @media (max-width: 1000px)
+      margin-bottom: 0
+      @media (max-width: 510px)
+        display: none
   &__wrapper
     display: flex
     flex-direction: column
     justify-content: space-between
-  /* right */
-  // .cards-box__descr
-  //   margin-bottom: 30px
+    @media (max-width: 1000px)
+      justify-content: space-around
 
 /* kids */
 .kids
   display: grid
-  grid-template-columns: repeat(2, minmax(230px, 267px))
+  grid-template-columns: repeat(2, minmax(100px, 267px))
   gap: 30px
   @media (max-width: 1340px)
     gap: 20px
+    @media (max-width: 1000px)
+      align-self: end
+      &__wrapper
+        display: flex
+        flex-direction: column
+        gap: 10px
   .spot_top
     visibility: hidden
   &__img
@@ -92,3 +128,10 @@
   &__girl-wrapper
     display: flex
     align-items: center
+
+.services__btn-wrapper
+  display: none
+  @media (max-width: 510px)
+    display: flex
+    justify-content: center
+    margin-top: 50px

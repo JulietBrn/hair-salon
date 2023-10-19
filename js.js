@@ -17,3 +17,8 @@ nav.addEventListener('click', event => {
     nav.classList.toggle('burger-menu')
   }
 })
+
+/* map */
+/* const map = document.querySelector('#map')
+console.log(map);
+map.container.fitToViewport() */

@@ -49,9 +49,15 @@
   margin-left: auto
   margin-right: auto
   position: relative
+  @media (max-width: 768px)
+    padding-left: 50px
+    padding-right: 50px
   @media (max-width: 480px)
     font-size: 28px
     margin-bottom: 60px
+    padding-left: 10px
+    padding-right: 10px
+    
   &::before 
     content: ''
     position: absolute
@@ -74,6 +80,8 @@
   font-style: normal
   font-weight: 400
   line-height: 120%
+  @media (max-width: 1000px)
+    font-size: 20px
 
 .paragraph-text
   font-family: 'open-sans', sans-serif
@@ -82,7 +90,7 @@
   line-height: 150%
   color: $white-color
   @media (max-width: 768px)
-    font-size: 16px
+    font-size: 14px
 
 .paragraph-text_bold
   font-weight: 700
@@ -93,6 +101,8 @@
   font-size: 20px
   font-weight: 400
   line-height: normal
+  @media (max-width: 768px)
+    font-size: 18px
 
 .text-details
   color: rgba(255, 255, 255, 0.70)

@@ -23,9 +23,12 @@
     border-image-repeat: stretch
     border-radius: 13px
     pointer-events: none 
+    @media (max-width: 1000px)
+      border: none
+  @media (max-width: 480px)
+    padding: 15px 20px
   .whatsup-icon
     height: 16px
-  
   &_none-border
     border: none
     padding-top: 5px
@@ -36,6 +39,7 @@
     padding-right: 5px
   &:hover
     transform: scale(1.05)
+
 
 
 .button-text
