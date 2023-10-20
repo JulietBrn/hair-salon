@@ -78,6 +78,23 @@
 
 
 .training-program
+  &__cards-wrapper
+    width: 78%
+    display: grid
+    grid-template-columns: 1fr min-content 1fr
+    gap: 30px
+    .train-arrow
+      align-self: center
+    @media (max-width: 1340px)
+      width: 100%
+    @media (max-width: 1000px)
+      grid-template-columns: 1fr 1fr
+      .train-arrow
+        display: none
+    @media (max-width: 768px)
+      grid-template-columns: 1fr
+      grid-template-rows: min-content
+      justify-items:  center
   &__contant-wrapper
     display: flex
     flex-direction: column
@@ -85,6 +102,7 @@
     gap: 50px
     @media (max-width: 768px)
       margin-bottom: 40px
+      gap: 30px
   // price-wrapper
   &__price-wrapper
     display: flex
@@ -96,7 +114,7 @@
     margin-bottom: 70px
     max-width: 240px
     @media (max-width: 768px)
-      margin-bottom: 40px
+      margin-bottom: 0
   &__t-and-p
     font-size: 20px
   // men-img
