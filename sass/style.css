@@ -734,6 +734,49 @@ header, main, footer {
   }
 }
 
+.price-card {
+  padding: 20px 45px 40px 45px;
+  border-radius: 13px;
+  border: 1px solid #F2C995;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1000px) {
+  .price-card .title-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 440px) {
+  .price-card .title-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .price-card {
+    padding: 15px 30px 30px;
+  }
+}
+.price-card .paragraph-text {
+  line-height: 120%;
+}
+.price-card__title {
+  align-self: center;
+}
+.price-card .img {
+  width: 200px;
+}
+.price-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.price-card__list-el {
+  display: flex;
+  justify-content: space-between;
+  gap: inherit;
+}
+
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1592,5 +1635,172 @@ header, main, footer {
     flex-direction: column;
     max-width: 440px;
     gap: 50px;
+  }
+}
+
+.price-list__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 450px));
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  .price-list__wrapper {
+    gap: 20px;
+  }
+}
+@media (max-width: 885px) {
+  .price-list__wrapper {
+    grid-template-columns: minmax(300px, 450px);
+  }
+}
+.price-list .women {
+  grid-row: 1/span 2;
+}
+.price-list .men {
+  align-self: end;
+}
+.price-list .kids {
+  align-self: start;
+}
+
+/* curly */
+.curly-method-descr__wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 960px;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .curly-method-descr__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+}
+.curly-method-descr__card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 700px) {
+  .curly-method-descr__card {
+    gap: 30px;
+  }
+}
+.curly-method-descr__price-wrapper {
+  align-self: center;
+}
+.curly-method-descr .title-container {
+  max-width: 400px;
+}
+@media (max-width: 700px) {
+  .curly-method-descr .title-container {
+    max-width: 360px;
+  }
+}
+.curly-method-descr .title-text {
+  margin-bottom: 15px;
+}
+.curly-method-descr__res-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.curly-method-descr h4:only-child, .curly-method-descr p:only-child {
+  margin-bottom: 0;
+}
+.curly-method-descr .training-program__price-wrapper {
+  margin-bottom: 0;
+  gap: 10px;
+  padding: 0 20px;
+}
+.curly-method-descr .res-wrapper {
+  max-width: 810px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.curly-method-descr .res-wrapper__arrows-wr {
+  display: flex;
+  justify-content: space-evenly;
+}
+.curly-method-descr .res-wrapper__arrows-wr .arrows-wr__img {
+  width: 35px;
+}
+@media (max-width: 700px) {
+  .curly-method-descr .res-wrapper__arrows-wr .arrows-wr__img:first-child {
+    display: none;
+  }
+}
+.curly-method-descr .res-wrapper__box {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 auto;
+  gap: inherit;
+}
+@media (max-width: 700px) {
+  .curly-method-descr .res-wrapper__box .res-wrapper__list:first-child {
+    display: none;
+  }
+}
+.curly-method-descr .res-wrapper__box .points__list {
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  .curly-method-descr .points__list {
+    padding-left: 0;
+  }
+}
+.curly-method-descr .training-program__img-box {
+  position: relative;
+}
+@media (max-width: 670px) {
+  .curly-method-descr .training-program__img-box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+  }
+  .curly-method-descr .training-program__img-box > * {
+    padding: 0;
+  }
+  .curly-method-descr .training-program__img-box .img-0 {
+    order: -1;
+    grid-column: 1/span 2;
+    padding-right: 40%;
+  }
+  .curly-method-descr .training-program__img-box .img-2 {
+    grid-column: 1;
+    padding-top: 40%;
+  }
+}
+.curly-method-descr .curly-quot {
+  position: absolute;
+  bottom: 20%;
+  transform: translateX(10px);
+  right: 0;
+}
+@media (max-width: 1000px) {
+  .curly-method-descr .curly-quot {
+    transform: translateX(0);
+    right: 10px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 750px) {
+  .curly-method-descr .curly-quot {
+    max-width: 180px;
+    right: 0;
+  }
+}
+@media (max-width: 1000px) and (max-width: 670px) {
+  .curly-method-descr .curly-quot {
+    bottom: 2px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 400px) {
+  .curly-method-descr .curly-quot {
+    transform: translate(25px, 10px);
   }
 }/*# sourceMappingURL=style.css.map */

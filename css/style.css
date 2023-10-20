@@ -521,7 +521,7 @@ header, main, footer {
 .training-program__card {
   padding: 40px;
   position: relative;
-  border-radius: 0px 13px;
+  border-radius: 13px;
   border: 2px solid #F2C995; }
   @media (max-width: 1000px) {
     .training-program__card {
@@ -554,8 +554,9 @@ header, main, footer {
 
 .train-card__part-wrapper {
   display: flex;
-  gap: 20px;
-  margin-bottom: 25px; }
+  gap: 20px; }
+  .train-card__part-wrapper:not(:last-child) {
+    margin-bottom: 25px; }
 
 .train-card__title {
   margin-bottom: 15px; }
