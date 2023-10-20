@@ -856,9 +856,18 @@ header, main, footer {
     cursor: pointer;
     z-index: 20;
   }
+}
+@media (max-width: 1000px) and (max-width: 480px) {
+  .burger {
+    gap: 8px;
+  }
+}
+@media (max-width: 1000px) {
   .burger-line {
     width: 40px;
-    color: #F2C995;
+    height: 1px;
+    background-color: #F2C995;
+    border: none;
   }
   .burger-rotate {
     display: block;
