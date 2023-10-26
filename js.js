@@ -8,7 +8,7 @@ burger.addEventListener('click', ()=>{
   nav.classList.toggle('burger-menu')
 })
 
-/* close with background */
+/* Burger. close with background */
 nav.addEventListener('click', event => {
   console.log(event);
   if(event.target.className == 'nav burger-menu'){
@@ -22,3 +22,4 @@ nav.addEventListener('click', event => {
 /* const map = document.querySelector('#map')
 console.log(map);
 map.container.fitToViewport() */
+

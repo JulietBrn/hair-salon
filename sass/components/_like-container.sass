@@ -1,11 +1,12 @@
 .img-like-container
   position: relative
   &__like-count
+    z-index: 1
     position: absolute
-    bottom: 0
-    left: 0
+    bottom: -5px
+    left: -5px
     border-radius: 0px 13px 0px 0px
     background: $black-color
-    padding: 10px 15px 0 0
+    padding: 10px 15px 5px 5px
     @media (max-width: 768px)
       padding: 5px 10px 0 0 
