@@ -14,11 +14,15 @@
   &::before 
     content: ''
     position: absolute
-    left: 0
+    left: 46%
+    transform: translateX(-50%)
     bottom: 0
-    width: 100%
+    width: 60%
     height: .5px 
     background: var(--gradient, linear-gradient(90deg, rgba(242, 201, 149, 0.00) 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, rgba(242, 201, 149, 0.00) 100%))
+    @media (max-width: 1000px)
+      width: 100%
+      left: 50%
   @media (max-width: 480px)
     margin-bottom: 50px
     .logo-img

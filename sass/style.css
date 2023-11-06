@@ -822,11 +822,18 @@ header, main, footer {
 .header-wrapper::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 46%;
+  transform: translateX(-50%);
   bottom: 0;
-  width: 100%;
+  width: 60%;
   height: 0.5px;
   background: var(--gradient, linear-gradient(90deg, rgba(242, 201, 149, 0) 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, rgba(242, 201, 149, 0) 100%));
+}
+@media (max-width: 1000px) {
+  .header-wrapper::before {
+    width: 100%;
+    left: 50%;
+  }
 }
 @media (max-width: 480px) {
   .header-wrapper {
@@ -957,6 +964,9 @@ header, main, footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+.footer-contant-wrapper .social-icons {
+  margin-left: 15px;
 }
 
 .footer {
@@ -1217,9 +1227,12 @@ header, main, footer {
   }
 }
 .points__item {
-  background: url(../icons/check.png) no-repeat;
+  background: url(../icons/tick.svg) no-repeat;
   padding-left: 24px;
   padding-top: -1px;
+}
+.points__item_scissors {
+  background: url(../icons/scissors.svg) no-repeat;
 }
 
 .curly-card__button-wrapper {
@@ -1967,6 +1980,7 @@ header, main, footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  align-items: center;
 }
 @media (max-width: 1000px) {
   .gallery-section .man-and-color {
