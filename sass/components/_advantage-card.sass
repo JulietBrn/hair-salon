@@ -14,13 +14,19 @@
       grid-column: 3/ span 3
   @media (max-width: 700px)
     grid-column: 1/-1
-  &::before 
+  &::before, &::after
     content: ''
     position: absolute
     right: 0
     bottom: 0
     height: 100%
-    width: .5px 
+    width: .5px
+  &::after
+    right: 0
+    top: 3%
+    height: 90%
+    background: var(--gradient, linear-gradient(180deg, rgba(242, 201, 149, 0.00) 0%, $bezh-color 20%, $bezh-color 40%, rgba(242, 201, 149, 0.00) 100%))
+    // #F2C995, #F2C995, #F2C995, #01010D
     // background: linear-gradient(to bottom, transparent 0%, var(--gradient, linear-gradient(90deg, rgba(242, 201, 149, 0.00) 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, rgba(242, 201, 149, 0.00) 100%)) 100%)
   &__circle
     position: absolute

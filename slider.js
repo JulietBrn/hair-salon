@@ -4,11 +4,12 @@ const sliderWrapper = document.querySelector('.slider-wrapper')
 let sliderImg = document.querySelector('.slider-contant__img')
 const arrPrev = document.querySelector('#arrow-prev')
 const arrNext = document.querySelector('#arrow-next')
-console.dir(sliderImg);
+const body = document.querySelector('body')
 
 function closeSlider() {
   sliderWrapper.classList.remove('active-slider')
   sliderWrapper.classList.add('hidden-slider')
+  // body.style.overflow = 'auto'
 }
 /* close slider by X */
 closeBtn.addEventListener('click', ()=> {
@@ -25,13 +26,12 @@ sliderWrapper.addEventListener('click', event => {
 document.addEventListener('keydown', (e)=> {
   if(e.code === 'Escape') {
     closeSlider()
-    console.log('close');
   }
 })
 
 const imgs = document.querySelectorAll('.slide-el')
 let index
-console.log(imgs);
+
 imgs.forEach((img, i) => {
   img.addEventListener('click', ()=> {
     index = i
@@ -39,6 +39,7 @@ imgs.forEach((img, i) => {
     sliderWrapper.classList.remove('hidden-slider')
     sliderWrapper.classList.add('active-slider')
     toStyleOpacityArr()
+    // body.style.overflow = 'hidden'
   })
 })
 
