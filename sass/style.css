@@ -862,7 +862,7 @@ header, main, footer {
 .price-card__title {
   align-self: center;
 }
-.price-card .img {
+.price-card .img-title {
   width: 200px;
 }
 .price-card__list {
