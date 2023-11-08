@@ -10,11 +10,10 @@
   padding: 15px 40px
   border-radius: 13px
   background-color: transparent
-  background-image: linear-gradient(to bottom, $bezh-color, white), linear-gradient(to bottom, $bezh-color, white), linear-gradient(to bottom, $bezh-color, white)
-  background-size: 100% 1px
-  background-position: 0 100%, 0 0
-  background-repeat: no-repeat
-  background-clip: border-box
+  border: 1px solid $bezh-color
+  border-left: none
+  border-right: none
+  border-radius: 13px
   // color: #fff
   // border: solid 1px transparent
   // background-clip: padding-box
@@ -26,12 +25,20 @@
     top: 0
     bottom: 0
     width: 13px
-    border: 1px solid $bezh-color
+    background-image: linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%)
+    background-size: .7px 100%
+    background-position: 0 0, 100% 0
+    background-repeat: no-repeat
     border-right: none
     border-radius: 13px 0 0 13px
   &::after
-    border: 1px solid white
+    background-image: linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%)
+    background-size:  .7px 100%
+    background-position: 100% 0, 0 0
+    background-repeat: no-repeat
+    background-clip: border-box
     border-left: none
+    border-bottom: none
     left: auto
     right: 0
     border-radius: 0 13px 13px 0
@@ -60,6 +67,7 @@
     padding-top: 5px
     &::before, &::after
       border: none
+      background-image: none
   &_visit-gallery
     padding-left: 0
     padding-right: 5px
