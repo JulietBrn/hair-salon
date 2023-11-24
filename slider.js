@@ -4,7 +4,7 @@ const sliderWrapper = document.querySelector('.slider-wrapper')
 let sliderImg = document.querySelector('.slider-contant__img')
 const arrPrev = document.querySelector('#arrow-prev')
 const arrNext = document.querySelector('#arrow-next')
-const body = document.querySelector('body')
+
 
 function closeSlider() {
   sliderWrapper.classList.remove('active-slider')

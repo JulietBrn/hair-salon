@@ -1,11 +1,13 @@
 const burger = document.querySelector('.burger')
 const burgerBg = document.querySelector('.burger-menu')
 const nav = document.querySelector('.nav')
+const body = document.querySelector('body')
 
 burger.addEventListener('click', ()=>{
   burger.classList.toggle('burger-rotate')
   nav.classList.toggle('nav-hidden')
   nav.classList.toggle('burger-menu')
+  body.classList.toggle('hidden')
 })
 
 /* Burger. close with background */
@@ -15,6 +17,7 @@ nav.addEventListener('click', event => {
     burger.classList.toggle('burger-rotate')
     nav.classList.toggle('nav-hidden')
     nav.classList.toggle('burger-menu')
+    body.classList.toggle('hidden')
   }
 })
 
