@@ -590,9 +590,6 @@ header, main, footer {
   padding-left: 0;
   padding-right: 5px;
 }
-.button:hover {
-  transform: scale(1.05);
-}
 
 .button-text {
   font-family: "SS4";
@@ -1054,6 +1051,9 @@ header, main, footer {
   transition: all 0.5s;
 }
 .nav-list__item a:hover {
+  color: #F2C995;
+}
+.nav-list .link_bezh {
   color: #F2C995;
 }
 
