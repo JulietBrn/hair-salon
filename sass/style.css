@@ -2354,4 +2354,51 @@ header, main, footer {
   .facts__part3 .second-img {
     margin: 0;
   }
+}
+.facts__my-study {
+  grid-template-columns: 1.3fr 1fr;
+  max-width: 800px;
+}
+.facts__my-study .points__list {
+  margin-bottom: 0;
+}
+@media (max-width: 520px) {
+  .facts__my-study {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facts-img-box {
+  display: grid;
+  gap: 30px;
+  margin: 0 auto;
+  grid-template-columns: 0.9fr 1fr 1fr;
+  align-items: center;
+  max-width: 900px;
+}
+@media (max-width: 1000px) {
+  .facts-img-box {
+    gap: 20px;
+    grid-template-columns: 0.9fr 1fr;
+    justify-items: center;
+    max-width: 600px;
+  }
+  .facts-img-box .fact-card__img_center {
+    grid-column: 1/-1;
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .facts-img-box {
+    grid-template-columns: 1fr;
+  }
+  .facts-img-box .fact-card__img {
+    width: 70%;
+  }
+  .facts-img-box .fact-card__img:nth-child(odd) {
+    justify-self: start;
+  }
+  .facts-img-box .fact-card__img:nth-child(2) {
+    justify-self: end;
+  }
 }/*# sourceMappingURL=style.css.map */

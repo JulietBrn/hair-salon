@@ -78,3 +78,33 @@
         order: 1
         @media (max-width: 410px)
           margin: 0
+  &__my-study
+    grid-template-columns: 1.3fr 1fr
+    max-width: 800px
+    .points__list
+      margin-bottom: 0
+    @media (max-width: 520px)
+      grid-template-columns: 1fr
+.facts-img-box
+  display: grid
+  gap: 30px
+  margin: 0 auto
+  grid-template-columns: .9fr 1fr 1fr
+  align-items: center
+  max-width: 900px
+  @media (max-width: 1000px)
+    gap: 20px
+    grid-template-columns: .9fr 1fr
+    justify-items: center
+    max-width: 600px
+    .fact-card__img_center
+      grid-column: 1/-1
+      width: 50%
+  @media (max-width: 480px)
+    grid-template-columns: 1fr
+    .fact-card__img
+      width: 70%
+      &:nth-child(odd)
+        justify-self: start
+      &:nth-child(2)
+        justify-self: end
