@@ -1,0 +1,127 @@
+.header-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 60px
+  position: relative
+  height: 80px
+  @media (max-width: 1000px)
+    .button::before
+      border: none
+  @media (max-width: 480px)
+    .button
+      padding: 15px 20px
+  &::before
+    content: ''
+    position: absolute
+    left: 46%
+    transform: translateX(-50%)
+    bottom: 0
+    width: 60%
+    height: .5px
+    background: var(--gradient, linear-gradient(90deg, rgba(242, 201, 149, 0.00) 0%, #F2C995 29.69%, #FFF 54.69%, #F2C995 73.44%, rgba(242, 201, 149, 0.00) 100%))
+    @media (max-width: 1000px)
+      width: 100%
+      left: 50%
+  @media (max-width: 480px)
+    margin-bottom: 50px
+    .logo-img
+      width: 100px
+
+.nav
+  padding: 15px 50px
+  position: relative
+
+.nav-list
+  display: grid
+  grid-template-columns: repeat(4, max-content )
+  gap: 20px
+  &__item
+    font-family: 'SS4'
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    text-transform: uppercase
+    padding: 5px
+    a
+      color: $white-color
+      transition: all .5s
+      &:hover
+        color: $bezh-color
+  .link_bezh
+    color: $bezh-color
+
+.burger
+  display: none
+
+@media (max-width: 1000px)
+  /* burger */
+  .burger
+    display: block
+    height: 40px
+    width: 40px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    z-index: 10
+    justify-content: center
+    cursor: pointer
+    z-index: 20
+    @media (max-width: 480px)
+      gap: 8px
+  .burger-line
+    width: 40px
+    height: 1px
+    background-color: $bezh-color
+    border: none
+  .burger-rotate
+    display: block
+  .burger-rotate .toggle-1
+    transition: .4s all
+    transform: rotate(45deg)
+    position: absolute
+    right: -3px
+    top: 35px
+  .burger-rotate .toggle-2
+    transition: .4s all
+    transform: rotate(-45deg)
+    position: absolute
+    right: -3px
+    top: 35px
+    margin: 0
+  .burger-rotate .burger-line-middle
+    transition: .4s all
+    background-color: black
+    display: none
+
+  .nav-hidden
+    transition: .7s all
+    position: fixed
+    width: 100%
+    height: 100%
+    right: 0
+    top: 0
+    transform: translateX(100%)
+    background-color: $black-color
+  .burger-menu
+    transition: .7s all
+    position: fixed
+    width: 100%
+    height: 100%
+    right: 0
+    top: 0
+    z-index: 10
+    background-color: $black-color
+
+  .nav-list
+    padding: 100px 100px 200px
+    position: absolute
+    right: 0
+    top: 0
+    background: $black-color
+    grid-template-columns: 150px
+    z-index: 5
+    justify-content: end
+
+
+

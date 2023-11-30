@@ -1,0 +1,68 @@
+.button
+  cursor: pointer
+  outline: none
+  display: flex
+  gap: 15px
+  border: none
+  position: relative
+  transition: all .5s
+  z-index: 2
+  padding: 15px 40px
+  border-radius: 13px
+  background-color: transparent
+  border: 1px solid $bezh-color
+  border-left: none
+  border-right: none
+  border-radius: 13px
+  &::before, &::after
+    content: ''
+    position: absolute
+    z-index: -1
+    left: 0
+    top: 0
+    bottom: 0
+    width: 13px
+    background-image: linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%)
+    background-size: .7px 100%
+    background-position: 0 0, 100% 0
+    background-repeat: no-repeat
+    border-right: none
+    border-radius: 13px 0 0 13px
+  &::after
+    background-image: linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%)
+    background-size:  .7px 100%
+    background-position: 100% 0, 0 0
+    background-repeat: no-repeat
+    background-clip: border-box
+    border-left: none
+    border-bottom: none
+    left: auto
+    right: 0
+    border-radius: 0 13px 13px 0
+  .whatsup-icon
+    height: 16px
+  &_none-border
+    border: none
+    background-image: none
+    padding-top: 5px
+    &::before, &::after
+      border: none
+      background-image: none
+  &_visit-gallery
+    padding-left: 0
+    padding-right: 5px
+
+// @media (hover: hover) {
+//   button:hover
+//     transform: scale(1.05)
+// }
+.button-text
+  font-family: 'SS4'
+  font-size: 16px
+  font-weight: 400
+  text-transform: uppercase
+  background: var(--gradient, linear-gradient(180deg, $bezh-color 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, $bezh-color 100%))
+  background-clip: text
+  color: transparent
+  &_bezh
+    color: $bezh-color

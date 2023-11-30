@@ -1,0 +1,117 @@
+@font-face
+  font-family: 'caveat'
+  src: local('Caveat')
+  src: url(../fonts/Caveat/Caveat-Regular.ttf)
+
+@font-face
+  font-family: 'Cormorant-Infant'
+  src: local('Cormorant Infant')
+  src: url(../fonts/Cormorant_Infant/CormorantInfant-Regular.ttf)
+
+@font-face
+  font-family: 'open-sans'
+  src: local('Open sans')
+  src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf)
+
+@font-face
+  font-family: 'SS4'
+  src: local('Source Serif 4')
+  src: url(../fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf)
+
+/* h1 */
+.main-title
+  color: $bezh-color
+  font-family: 'SS4', serif
+  font-size: 48px
+  font-weight: 400
+  line-height: 105.523%
+  @media (max-width: 768px)
+    font-size: 34px
+
+.second-title
+  color: $bezh-color
+  display: inline-block
+  text-align: center
+  font-family: 'Cormorant-Infant'
+  font-size: 40px
+  font-weight: 400
+  line-height: 105.1%
+  text-transform: uppercase
+  margin-bottom: 70px
+  padding-left: 140px
+  padding-right: 140px
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  @media (max-width: 768px)
+    padding-left: 50px
+    padding-right: 50px
+  @media (max-width: 480px)
+    font-size: 28px
+    margin-bottom: 60px
+    padding-left: 10px
+    padding-right: 10px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 1px
+    background: var(--gradient, linear-gradient(90deg, rgba(242, 201, 149, 0.00) 0%, $bezh-color 29.69%, $white-color 54.69%, $bezh-color 73.44%, rgba(242, 201, 149, 0.00) 100%))
+
+.second-title__wrapper
+  display: flex
+  justify-content: center
+.second-title_top-line
+  padding-top: 30px
+  border-top: 1px solid rgba(242, 201, 149, 0.00)
+.secind-title_side-page::before
+  background: none
+
+.quotation-text
+  font-family: 'caveat'
+  font-size: 24px
+  font-style: normal
+  font-weight: 400
+  line-height: 120%
+  @media (max-width: 1000px)
+    font-size: 20px
+
+.paragraph-text
+  font-family: 'open-sans', sans-serif
+  font-size: 16px
+  font-weight: 400
+  line-height: 150%
+  color: $white-color
+  @media (max-width: 768px)
+    font-size: 14px
+
+.paragraph-text_bold
+  font-weight: 700
+
+
+.title-text
+  color: $bezh-color
+  font-family: 'open-sans'
+  font-size: 20px
+  font-weight: 400
+  line-height: normal
+  @media (max-width: 768px)
+    font-size: 18px
+
+.title-text_upper
+  text-transform: uppercase
+.title-text_bold
+  font-size: 20px
+  font-weight: 600
+.title-text_white
+  color: $white-color
+
+.text-details
+  color: rgba(255, 255, 255, 0.70)
+  font-family: 'open-sans'
+  font-size: 12px
+  font-style: normal
+  font-weight: 400
+  line-height: normal
