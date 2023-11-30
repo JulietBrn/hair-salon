@@ -2401,4 +2401,18 @@ header, main, footer {
   .facts-img-box .fact-card__img:nth-child(2) {
     justify-self: end;
   }
+}
+
+.privacy-title {
+  margin-bottom: 40px;
+}
+
+.privacy_subtitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.privacy-container {
+  margin: 100px 0;
 }/*# sourceMappingURL=style.css.map */
