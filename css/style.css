@@ -29,7 +29,7 @@ section {
 
 .container {
   display: grid;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   grid-template-columns: minmax(30px, 1fr) 1280px minmax(30px, 1fr); }
   @media (max-width: 1340px) {
@@ -177,6 +177,12 @@ header, main, footer {
   font-style: normal;
   font-weight: 400;
   line-height: normal; }
+
+.title-h1_seo {
+  position: absolute;
+  z-index: -5;
+  left: -100%;
+  font-size: 5px; }
 
 .quotation-wrapper {
   position: relative;
@@ -451,6 +457,18 @@ header, main, footer {
   .button_visit-gallery {
     padding-left: 0;
     padding-right: 5px; }
+
+@media (max-width: 550px) {
+  .button_none-border-small {
+    border: none;
+    background-image: none; }
+    .button_none-border-small::before, .button_none-border-small::after {
+      border: none;
+      background-image: none; } }
+
+@media (hover: hover) {
+  button:hover {
+    transform: scale(1.05); } }
 
 .button-text {
   font-family: 'SS4';
@@ -840,7 +858,6 @@ header, main, footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 10;
     justify-content: center;
     cursor: pointer;
     z-index: 20; } }
@@ -987,6 +1004,7 @@ header, main, footer {
       gap: 40px;
       grid-template-rows: min-content min-content; } }
   .main-screen__main-wrapper {
+    z-index: 5;
     padding-top: 70px; }
     @media (max-width: 1340px) {
       .main-screen__main-wrapper {
@@ -1227,7 +1245,9 @@ header, main, footer {
   .info #map {
     border-radius: 13px;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    max-width: 730;
+    max-height: 340; }
 
 .street-list {
   display: flex;
@@ -1850,3 +1870,14 @@ header, main, footer {
           justify-self: start; }
         .facts-img-box .fact-card__img:nth-child(2) {
           justify-self: end; } }
+
+.privacy-title {
+  margin-bottom: 40px; }
+
+.privacy_subtitle {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: white; }
+
+.privacy-container {
+  margin: 100px 0; }
