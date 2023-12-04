@@ -1136,7 +1136,7 @@ header, main, footer {
   }
   .nav {
     background-color: #01010D;
-    width: 1000px;
+    width: 100vw;
     transition: 0.7s all;
     top: 0;
     position: fixed;
@@ -1144,6 +1144,13 @@ header, main, footer {
     height: 100%;
     z-index: 10;
   }
+}
+@media (max-width: 1000px) and (max-width: 480px) {
+  .nav {
+    width: 100vw;
+  }
+}
+@media (max-width: 1000px) {
   .nav-hidden {
     transform: translateX(100%);
   }
