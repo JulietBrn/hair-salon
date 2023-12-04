@@ -6,7 +6,6 @@ const body = document.querySelector('body')
 burger.addEventListener('click', ()=>{
   burger.classList.toggle('burger-rotate')
   nav.classList.toggle('nav-hidden')
-  nav.classList.toggle('burger-menu')
   body.classList.toggle('hidden')
 })
 
@@ -16,7 +15,6 @@ nav.addEventListener('click', event => {
   if(event.target.className == 'nav burger-menu'){
     burger.classList.toggle('burger-rotate')
     nav.classList.toggle('nav-hidden')
-    nav.classList.toggle('burger-menu')
     body.classList.toggle('hidden')
   }
 })
