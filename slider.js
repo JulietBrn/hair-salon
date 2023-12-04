@@ -9,7 +9,7 @@ const arrNext = document.querySelector('#arrow-next')
 function closeSlider() {
   sliderWrapper.classList.remove('active-slider')
   sliderWrapper.classList.add('hidden-slider')
-  // body.style.overflow = 'auto'
+  body.style.overflow = 'auto'
 }
 /* close slider by X */
 closeBtn.addEventListener('click', ()=> {
@@ -39,7 +39,7 @@ imgs.forEach((img, i) => {
     sliderWrapper.classList.remove('hidden-slider')
     sliderWrapper.classList.add('active-slider')
     toStyleOpacityArr()
-    // body.style.overflow = 'hidden'
+    body.style.overflow = 'hidden'
   })
 })
 
