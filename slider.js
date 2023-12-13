@@ -24,6 +24,7 @@ sliderWrapper.addEventListener('click', event => {
 
 /* close by esc */
 document.addEventListener('keydown', (e)=> {
+  console.log(e);
   if(e.code === 'Escape') {
     closeSlider()
   }
@@ -51,21 +52,27 @@ function showImage(index) {
 
 /* to left */
 arrPrev.addEventListener('click', ()=> {
+  toLeft()
+})
+function toLeft() {
   if(index !== 0) {
     index = index-1
     showImage(index)
     toStyleOpacityArr()
   }
-})
+}
 
 /* to right */
 arrNext.addEventListener('click', ()=> {
+  toRight()
+})
+function toRight() {
   if(index !== imgs.length-1) {
     index = index+1
     showImage(index)
     toStyleOpacityArr()
   }
-})
+}
 
 /* if slide is the last or slide is the 0 - opacity .3 */
 function toStyleOpacityArr(){
@@ -80,3 +87,29 @@ function toStyleOpacityArr(){
   }
 }
 
+/* swap  'touchstart' и 'touchend'  */
+let start
+let change
+
+sliderWrapper.addEventListener('touchstart', (e) => {
+  start = e.touches[0].clientX
+})
+sliderWrapper.addEventListener('touchmove', (e) => {
+
+  let touch = e.touches[0].clientX
+  change = start - touch
+})
+sliderWrapper.addEventListener('touchend', (e)=> {
+  if(change !== 0) {
+    moveWrap()
+    change = 0
+  }
+})
+
+function moveWrap() {
+  if(change >= 10) {
+    toRight()
+  } else if (change < -10) {
+    toLeft()
+  }
+}
