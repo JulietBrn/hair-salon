@@ -56,7 +56,20 @@
 .footer__must-have-detailes
   display: flex
   justify-content: space-around
+  margin-bottom: 10px
   @media (max-width: 768px)
     width: 300px
     flex-direction: column
     gap: 10px
+.adj-wrap
+  display: flex
+  justify-content: end
+  @media (max-width: 768px)
+    justify-content: start
+  .text-details_right
+    display: block
+    margin-right: 25%
+    margin-left: auto
+    text-decoration-line: underline
+    @media (max-width: 768px)
+      margin: 0

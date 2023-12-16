@@ -1256,12 +1256,34 @@ header, main, footer {
 .footer__must-have-detailes {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .footer__must-have-detailes {
     width: 300px;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+.adj-wrap {
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .adj-wrap {
+    justify-content: start;
+  }
+}
+.adj-wrap .text-details_right {
+  display: block;
+  margin-right: 25%;
+  margin-left: auto;
+  text-decoration-line: underline;
+}
+@media (max-width: 768px) {
+  .adj-wrap .text-details_right {
+    margin: 0;
   }
 }
 
