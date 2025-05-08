@@ -1,0 +1,67 @@
+.training-program
+  &__card
+    padding: 40px
+    position: relative
+    border-radius:  13px
+    border: 1px solid $bezh-color
+    border-left: none
+    border-right: none
+    border-radius: 13px
+    &::before, &::after
+      content: ''
+      position: absolute
+      z-index: 3
+      left: 0
+      top: 0
+      bottom: 0
+      width: 13px
+      background-image: linear-gradient(to bottom, rgba(242, 201, 149, 0.00), $bezh-color)
+      background-size:  1px 100%
+      background-position: 0 0, 100% 0
+      background-repeat: no-repeat
+      border-right: none
+      border-radius: 13px 0 0 13px
+    &::after
+      background-image: linear-gradient(to bottom, $bezh-color, rgba(242, 201, 149, 0.00))
+      background-size:  1px 100%
+      background-position: 100% 0, 0 0
+      background-repeat: no-repeat
+      background-clip: border-box
+      border-left: none
+      border-bottom: none
+      left: auto
+      right: 0
+      border-radius: 0 13px 13px 0
+    @media (max-width: 1000px)
+      padding: 25px
+    @media (max-width: 768px)
+      max-width: 355px
+    .spot_top
+      top: 3%
+      left: 3%
+    .spot_bottom
+      bottom: 3%
+      right: 5%
+  &__spot
+    position: absolute
+    z-index: -1
+  .points__list
+    padding-left: 0
+    transform: translateX(-20px)
+    margin-bottom: 0
+    @media (max-width: 768px)
+      gap: 8px
+
+.train-card
+  &__figure
+    width: 30px
+    height: 30px
+  &__part-wrapper
+    display: flex
+    gap: 20px
+    &:not(:last-child)
+      margin-bottom: 25px
+  &__title
+    margin-bottom: 15px
+    @media (max-width: 768px)
+      margin-bottom: 10px
